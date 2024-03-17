@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HeatWaves</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="health_conditions">
+        <item>Poor</item>
+        <item>Good</item>
+        <item>Very Good</item>
+    </string-array>
+</resources>

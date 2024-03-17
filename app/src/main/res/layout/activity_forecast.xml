@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+
+        <EditText
+            android:id="@+id/dateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="date" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender_options" /> <!-- Define gender_options in strings.xml -->
+
+        <EditText
+            android:id="@+id/currentWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Weight (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/healthConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Conditions"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/allergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies"
+            android:inputType="textMultiLine" />
+        <Spinner
+            android:id="@+id/general_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/health_conditions" />
+        <CheckBox
+            android:id="@+id/diuretics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diuretics Medication" />
+        <EditText
+            android:id="@+id/diuretics_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diuretics Name &amp; Dosage"
+            android:inputType="textMultiLine" />
+        <CheckBox
+            android:id="@+id/beta_blockers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beta-Blockers Medication" />
+        <EditText
+            android:id="@+id/beta_blockers_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Beta-Blockers Name &amp; Dosage"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/other_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Other Medications"
+            android:inputType="textMultiLine" />
+        <!-- Add additional fields for each of the requirements you listed -->
+
+        <CheckBox
+            android:id="@+id/medicalRecordsConsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consent to Access Medical Records" />
+
+        <!-- Continue adding fields for the rest of the data points -->
+        <EditText
+            android:id="@+id/work_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Typical Workday in Heatwave"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/water_intake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Determine Water Intake"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/effect_dehydration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medication Effect on Hydration"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/feel_dehydrated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Feel When Dehydrated"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/severe_dehydration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Severe Dehydration Experience"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/dehydration_habbits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hydration Habits"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tools for Monitoring Hydration"
+            android:inputType="textMultiLine" />
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>
